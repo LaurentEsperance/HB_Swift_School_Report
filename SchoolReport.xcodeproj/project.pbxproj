@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		88696EEF1DE2EAAD001CA120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696EEE1DE2EAAD001CA120 /* AppDelegate.swift */; };
-		88696EF11DE2EAAD001CA120 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696EF01DE2EAAD001CA120 /* ViewController.swift */; };
 		88696EF41DE2EAAD001CA120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88696EF21DE2EAAD001CA120 /* Main.storyboard */; };
 		88696EF61DE2EAAD001CA120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88696EF51DE2EAAD001CA120 /* Assets.xcassets */; };
 		88696EF91DE2EAAD001CA120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88696EF71DE2EAAD001CA120 /* LaunchScreen.storyboard */; };
 		88696F041DE2EAAD001CA120 /* SchoolReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F031DE2EAAD001CA120 /* SchoolReportTests.swift */; };
 		88696F0F1DE2EAAD001CA120 /* SchoolReportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F0E1DE2EAAD001CA120 /* SchoolReportUITests.swift */; };
+		88696F201DE2F15D001CA120 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F1F1DE2F15D001CA120 /* MainViewController.swift */; };
+		88696F221DE2F17F001CA120 /* DetailedReportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F211DE2F17F001CA120 /* DetailedReportTableViewController.swift */; };
+		88696F241DE2F19C001CA120 /* AddMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F231DE2F19C001CA120 /* AddMarkViewController.swift */; };
+		88696F261DE2F1E0001CA120 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F251DE2F1E0001CA120 /* Mark.swift */; };
+		88696F291DE2F203001CA120 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F281DE2F203001CA120 /* Tools.swift */; };
+		88696F2B1DE2F531001CA120 /* MarkReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F2A1DE2F531001CA120 /* MarkReport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		88696EEB1DE2EAAD001CA120 /* SchoolReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88696EEE1DE2EAAD001CA120 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88696EF01DE2EAAD001CA120 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88696EF31DE2EAAD001CA120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88696EF51DE2EAAD001CA120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88696EF81DE2EAAD001CA120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		88696F0A1DE2EAAD001CA120 /* SchoolReportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolReportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88696F0E1DE2EAAD001CA120 /* SchoolReportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolReportUITests.swift; sourceTree = "<group>"; };
 		88696F101DE2EAAD001CA120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88696F1F1DE2F15D001CA120 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		88696F211DE2F17F001CA120 /* DetailedReportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedReportTableViewController.swift; sourceTree = "<group>"; };
+		88696F231DE2F19C001CA120 /* AddMarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMarkViewController.swift; sourceTree = "<group>"; };
+		88696F251DE2F1E0001CA120 /* Mark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		88696F281DE2F203001CA120 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		88696F2A1DE2F531001CA120 /* MarkReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkReport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,11 @@
 		88696EED1DE2EAAD001CA120 /* SchoolReport */ = {
 			isa = PBXGroup;
 			children = (
+				88696F271DE2F1F6001CA120 /* Tool */,
+				88696F1C1DE2F10E001CA120 /* Model */,
+				88696F1D1DE2F10E001CA120 /* View */,
+				88696F1E1DE2F10E001CA120 /* ViewControllers */,
 				88696EEE1DE2EAAD001CA120 /* AppDelegate.swift */,
-				88696EF01DE2EAAD001CA120 /* ViewController.swift */,
 				88696EF21DE2EAAD001CA120 /* Main.storyboard */,
 				88696EF51DE2EAAD001CA120 /* Assets.xcassets */,
 				88696EF71DE2EAAD001CA120 /* LaunchScreen.storyboard */,
@@ -123,6 +136,40 @@
 				88696F101DE2EAAD001CA120 /* Info.plist */,
 			);
 			path = SchoolReportUITests;
+			sourceTree = "<group>";
+		};
+		88696F1C1DE2F10E001CA120 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88696F251DE2F1E0001CA120 /* Mark.swift */,
+				88696F2A1DE2F531001CA120 /* MarkReport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88696F1D1DE2F10E001CA120 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88696F1E1DE2F10E001CA120 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88696F1F1DE2F15D001CA120 /* MainViewController.swift */,
+				88696F211DE2F17F001CA120 /* DetailedReportTableViewController.swift */,
+				88696F231DE2F19C001CA120 /* AddMarkViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88696F271DE2F1F6001CA120 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				88696F281DE2F203001CA120 /* Tools.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88696EF11DE2EAAD001CA120 /* ViewController.swift in Sources */,
+				88696F2B1DE2F531001CA120 /* MarkReport.swift in Sources */,
+				88696F221DE2F17F001CA120 /* DetailedReportTableViewController.swift in Sources */,
+				88696F241DE2F19C001CA120 /* AddMarkViewController.swift in Sources */,
 				88696EEF1DE2EAAD001CA120 /* AppDelegate.swift in Sources */,
+				88696F291DE2F203001CA120 /* Tools.swift in Sources */,
+				88696F201DE2F15D001CA120 /* MainViewController.swift in Sources */,
+				88696F261DE2F1E0001CA120 /* Mark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
