@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88696EEF1DE2EAAD001CA120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696EEE1DE2EAAD001CA120 /* AppDelegate.swift */; };
+		88696EF11DE2EAAD001CA120 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696EF01DE2EAAD001CA120 /* ViewController.swift */; };
+		88696EF41DE2EAAD001CA120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88696EF21DE2EAAD001CA120 /* Main.storyboard */; };
+		88696EF61DE2EAAD001CA120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88696EF51DE2EAAD001CA120 /* Assets.xcassets */; };
+		88696EF91DE2EAAD001CA120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88696EF71DE2EAAD001CA120 /* LaunchScreen.storyboard */; };
+		88696F041DE2EAAD001CA120 /* SchoolReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F031DE2EAAD001CA120 /* SchoolReportTests.swift */; };
+		88696F0F1DE2EAAD001CA120 /* SchoolReportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F0E1DE2EAAD001CA120 /* SchoolReportUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88696F001DE2EAAD001CA120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88696EE31DE2EAAD001CA120 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88696EEA1DE2EAAD001CA120;
+			remoteInfo = SchoolReport;
+		};
+		88696F0B1DE2EAAD001CA120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88696EE31DE2EAAD001CA120 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88696EEA1DE2EAAD001CA120;
+			remoteInfo = SchoolReport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88696EEB1DE2EAAD001CA120 /* SchoolReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88696EEE1DE2EAAD001CA120 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88696EF01DE2EAAD001CA120 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88696EF31DE2EAAD001CA120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88696EF51DE2EAAD001CA120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88696EF81DE2EAAD001CA120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88696EFA1DE2EAAD001CA120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88696EFF1DE2EAAD001CA120 /* SchoolReportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolReportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88696F031DE2EAAD001CA120 /* SchoolReportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolReportTests.swift; sourceTree = "<group>"; };
+		88696F051DE2EAAD001CA120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88696F0A1DE2EAAD001CA120 /* SchoolReportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolReportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88696F0E1DE2EAAD001CA120 /* SchoolReportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolReportUITests.swift; sourceTree = "<group>"; };
+		88696F101DE2EAAD001CA120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88696EE81DE2EAAD001CA120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88696EFC1DE2EAAD001CA120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88696F071DE2EAAD001CA120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88696EE21DE2EAAD001CA120 = {
+			isa = PBXGroup;
+			children = (
+				88696EED1DE2EAAD001CA120 /* SchoolReport */,
+				88696F021DE2EAAD001CA120 /* SchoolReportTests */,
+				88696F0D1DE2EAAD001CA120 /* SchoolReportUITests */,
+				88696EEC1DE2EAAD001CA120 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88696EEC1DE2EAAD001CA120 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88696EEB1DE2EAAD001CA120 /* SchoolReport.app */,
+				88696EFF1DE2EAAD001CA120 /* SchoolReportTests.xctest */,
+				88696F0A1DE2EAAD001CA120 /* SchoolReportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88696EED1DE2EAAD001CA120 /* SchoolReport */ = {
+			isa = PBXGroup;
+			children = (
+				88696EEE1DE2EAAD001CA120 /* AppDelegate.swift */,
+				88696EF01DE2EAAD001CA120 /* ViewController.swift */,
+				88696EF21DE2EAAD001CA120 /* Main.storyboard */,
+				88696EF51DE2EAAD001CA120 /* Assets.xcassets */,
+				88696EF71DE2EAAD001CA120 /* LaunchScreen.storyboard */,
+				88696EFA1DE2EAAD001CA120 /* Info.plist */,
+			);
+			path = SchoolReport;
+			sourceTree = "<group>";
+		};
+		88696F021DE2EAAD001CA120 /* SchoolReportTests */ = {
+			isa = PBXGroup;
+			children = (
+				88696F031DE2EAAD001CA120 /* SchoolReportTests.swift */,
+				88696F051DE2EAAD001CA120 /* Info.plist */,
+			);
+			path = SchoolReportTests;
+			sourceTree = "<group>";
+		};
+		88696F0D1DE2EAAD001CA120 /* SchoolReportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88696F0E1DE2EAAD001CA120 /* SchoolReportUITests.swift */,
+				88696F101DE2EAAD001CA120 /* Info.plist */,
+			);
+			path = SchoolReportUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88696EEA1DE2EAAD001CA120 /* SchoolReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88696F131DE2EAAD001CA120 /* Build configuration list for PBXNativeTarget "SchoolReport" */;
+			buildPhases = (
+				88696EE71DE2EAAD001CA120 /* Sources */,
+				88696EE81DE2EAAD001CA120 /* Frameworks */,
+				88696EE91DE2EAAD001CA120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchoolReport;
+			productName = SchoolReport;
+			productReference = 88696EEB1DE2EAAD001CA120 /* SchoolReport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88696EFE1DE2EAAD001CA120 /* SchoolReportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88696F161DE2EAAD001CA120 /* Build configuration list for PBXNativeTarget "SchoolReportTests" */;
+			buildPhases = (
+				88696EFB1DE2EAAD001CA120 /* Sources */,
+				88696EFC1DE2EAAD001CA120 /* Frameworks */,
+				88696EFD1DE2EAAD001CA120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88696F011DE2EAAD001CA120 /* PBXTargetDependency */,
+			);
+			name = SchoolReportTests;
+			productName = SchoolReportTests;
+			productReference = 88696EFF1DE2EAAD001CA120 /* SchoolReportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88696F091DE2EAAD001CA120 /* SchoolReportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88696F191DE2EAAD001CA120 /* Build configuration list for PBXNativeTarget "SchoolReportUITests" */;
+			buildPhases = (
+				88696F061DE2EAAD001CA120 /* Sources */,
+				88696F071DE2EAAD001CA120 /* Frameworks */,
+				88696F081DE2EAAD001CA120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88696F0C1DE2EAAD001CA120 /* PBXTargetDependency */,
+			);
+			name = SchoolReportUITests;
+			productName = SchoolReportUITests;
+			productReference = 88696F0A1DE2EAAD001CA120 /* SchoolReportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88696EE31DE2EAAD001CA120 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = laurent;
+				TargetAttributes = {
+					88696EEA1DE2EAAD001CA120 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					88696EFE1DE2EAAD001CA120 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88696EEA1DE2EAAD001CA120;
+					};
+					88696F091DE2EAAD001CA120 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88696EEA1DE2EAAD001CA120;
+					};
+				};
+			};
+			buildConfigurationList = 88696EE61DE2EAAD001CA120 /* Build configuration list for PBXProject "SchoolReport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88696EE21DE2EAAD001CA120;
+			productRefGroup = 88696EEC1DE2EAAD001CA120 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88696EEA1DE2EAAD001CA120 /* SchoolReport */,
+				88696EFE1DE2EAAD001CA120 /* SchoolReportTests */,
+				88696F091DE2EAAD001CA120 /* SchoolReportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88696EE91DE2EAAD001CA120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88696EF91DE2EAAD001CA120 /* LaunchScreen.storyboard in Resources */,
+				88696EF61DE2EAAD001CA120 /* Assets.xcassets in Resources */,
+				88696EF41DE2EAAD001CA120 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88696EFD1DE2EAAD001CA120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88696F081DE2EAAD001CA120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88696EE71DE2EAAD001CA120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88696EF11DE2EAAD001CA120 /* ViewController.swift in Sources */,
+				88696EEF1DE2EAAD001CA120 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88696EFB1DE2EAAD001CA120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88696F041DE2EAAD001CA120 /* SchoolReportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88696F061DE2EAAD001CA120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88696F0F1DE2EAAD001CA120 /* SchoolReportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88696F011DE2EAAD001CA120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88696EEA1DE2EAAD001CA120 /* SchoolReport */;
+			targetProxy = 88696F001DE2EAAD001CA120 /* PBXContainerItemProxy */;
+		};
+		88696F0C1DE2EAAD001CA120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88696EEA1DE2EAAD001CA120 /* SchoolReport */;
+			targetProxy = 88696F0B1DE2EAAD001CA120 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88696EF21DE2EAAD001CA120 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88696EF31DE2EAAD001CA120 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88696EF71DE2EAAD001CA120 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88696EF81DE2EAAD001CA120 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88696F111DE2EAAD001CA120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88696F121DE2EAAD001CA120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88696F141DE2EAAD001CA120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SchoolReport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.SchoolReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		88696F151DE2EAAD001CA120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SchoolReport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.SchoolReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		88696F171DE2EAAD001CA120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SchoolReportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.SchoolReportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SchoolReport.app/SchoolReport";
+			};
+			name = Debug;
+		};
+		88696F181DE2EAAD001CA120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SchoolReportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.SchoolReportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SchoolReport.app/SchoolReport";
+			};
+			name = Release;
+		};
+		88696F1A1DE2EAAD001CA120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SchoolReportUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.SchoolReportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SchoolReport;
+			};
+			name = Debug;
+		};
+		88696F1B1DE2EAAD001CA120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SchoolReportUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.SchoolReportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SchoolReport;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88696EE61DE2EAAD001CA120 /* Build configuration list for PBXProject "SchoolReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88696F111DE2EAAD001CA120 /* Debug */,
+				88696F121DE2EAAD001CA120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88696F131DE2EAAD001CA120 /* Build configuration list for PBXNativeTarget "SchoolReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88696F141DE2EAAD001CA120 /* Debug */,
+				88696F151DE2EAAD001CA120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88696F161DE2EAAD001CA120 /* Build configuration list for PBXNativeTarget "SchoolReportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88696F171DE2EAAD001CA120 /* Debug */,
+				88696F181DE2EAAD001CA120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88696F191DE2EAAD001CA120 /* Build configuration list for PBXNativeTarget "SchoolReportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88696F1A1DE2EAAD001CA120 /* Debug */,
+				88696F1B1DE2EAAD001CA120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88696EE31DE2EAAD001CA120 /* Project object */;
+}
