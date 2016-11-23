@@ -17,4 +17,14 @@ class Tools {
         }
         return addingVal/Double(nbValue)
     }
+    
+    public static func meanWithCoef(values:[Double], coef:[Double], nbValue:Int ) -> Double {
+        var addingVal:Double = 0
+        var sumCoef:Double = 0
+        for i in 0...values.count-1 {
+            addingVal += values[i] * coef[i]
+            sumCoef += coef[i]
+        }
+        return addingVal/sumCoef
+    }
 }

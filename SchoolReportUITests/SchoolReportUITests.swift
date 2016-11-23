@@ -28,9 +28,42 @@ class SchoolReportUITests: XCTestCase {
         super.tearDown()
     }
     
+    
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let navBarListOfMarks = app.navigationBars["List of Marks"]
+        let navBarDetailedReport = app.navigationBars["Details Marks"]
+        let detailedReportBut = app.tabBars.buttons["Detailed Report"]
+        
+        let listofMarksBut = app.tabBars.buttons["List of marks"]
+        let addMarkButLM = navBarListOfMarks.buttons["Add"]
+        let addMarkButDR = navBarDetailedReport.buttons["Add"]
+        let saveButton = app.navigationBars["Add Mark"].buttons["Save"]
+        let cancelButton = app.navigationBars["Add Mark"].buttons["Cancel"]
+        
+        let addMarkTestNameTxt = app.textFields["markAdd-testName-txt"]
+        let addMarkValueTxt = app.textFields["markAdd-val-txt"]
+        let addMarkSubjTxt = app.textFields["markAdd-subj-txt"]
+        let addMarkCoefTxt = app.textFields["markAdd-coef-txt"]
+        
+        
+        detailedReportBut.tap()
+        addMarkButDR.tap()
+        addMarkSubjTxt.tap()
+        addMarkSubjTxt.typeText("Anglais")
+        addMarkValueTxt.tap()
+        addMarkValueTxt.typeText("15")
+        addMarkCoefTxt.tap()
+        addMarkCoefTxt.typeText("2")
+        addMarkTestNameTxt.tap()
+        addMarkTestNameTxt.typeText("Test 1")
+        saveButton.tap()
+
+        
+
     }
     
 }
