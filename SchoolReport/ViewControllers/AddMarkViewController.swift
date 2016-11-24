@@ -42,8 +42,8 @@ class AddMarkViewController: UIViewController {
         let newMark:Mark = Mark()
         newMark.subject = ui_subj_lbl.text!
         newMark.testName = ui_testName_lbl.text!
-        newMark.coef = Double(ui_coef_lbl.text!)!
-        newMark.val = Double(ui_mark_lbl.text!)!
+        newMark.coef = Double(ui_coef_lbl.text!.replacingOccurrences(of: ",", with: "."))!
+        newMark.val = Double(ui_mark_lbl.text!.replacingOccurrences(of: ",", with: "."))!
         return newMark
     }
     

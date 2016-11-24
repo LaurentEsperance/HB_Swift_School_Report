@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class DetailedReportTableViewController: UITableViewController {
     
@@ -14,6 +15,11 @@ class DetailedReportTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*if (markReportInstance.listOfMarksInDT.count == 0){
+         
+         }*/
+        
         if (markReportInstance.listOfMarks.isEmpty) {
             markReportInstance.listOfMarks.append(Mark(subject: "Anglais", val: 10, testName: "Test 1", coef: 2))
             markReportInstance.listOfMarks.append(Mark(subject: "Math", val: 15, testName: "Essai 1", coef: 4))
@@ -42,12 +48,14 @@ class DetailedReportTableViewController: UITableViewController {
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-     return markReportInstance.listOfSubjects[section]
-     }
+        return markReportInstance.listOfSubjects[section]
+    }
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return markReportInstance.listOfSubjectsWithSection(subjects: markReportInstance.listOfSubjects)[section].count
+        let eltsInSection:Int
+        eltsInSection = markReportInstance.listOfSubjectsWithSection(subjects: markReportInstance.listOfSubjects)[section].count
+        return eltsInSection
     }
     
     
@@ -61,8 +69,22 @@ class DetailedReportTableViewController: UITableViewController {
     }
     
     
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 35
+    }
+    
+    
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Section_footer")
+        let cell:FooterTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Section_footer") as! FooterTableViewCell
+        let listOfMarks = markReportInstance.listOfSubjectsWithSection(subjects: markReportInstance.listOfSubjects)
+        let listOfMeans = markReportInstance.getMeanBySection(listOfMarks: listOfMarks)
+        cell.displayMean(nbMarks: listOfMarks[section].count, meanVal: listOfMeans[section])
+        return cell.contentView
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cell:HeaderSectionTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Section_header") as! HeaderSectionTableViewCell
+        cell.displayHeaderSectionName(sectionName: markReportInstance.listOfSubjects[section])
         return cell
     }
     
@@ -74,31 +96,37 @@ class DetailedReportTableViewController: UITableViewController {
         if let addMarkController:AddMarkViewController = unwindSegue.source as? AddMarkViewController {
             let newMarktoAppend:Mark = addMarkController.getMark()
             markReportInstance.listOfMarks.append(newMarktoAppend)
+            let realm = try! Realm()
+            try! realm.write {
+                realm.add(newMarktoAppend)
+            }
             tableView.reloadData()
             print("Unwind Launched")
         }
     }
     
     
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
     
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    
+    
+    
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            print("Delete at row \(indexPath.row) and section \(indexPath.section)")
+            
+            //markReportInstance.delete()
+            
+            //tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
     
     /*
      // Override to support rearranging the table view.

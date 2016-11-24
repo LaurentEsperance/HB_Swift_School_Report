@@ -7,28 +7,24 @@
 //
 
 import Foundation
+import RealmSwift
+import Realm
 
-class Mark {
-    private var _subject:String
-    private var _val:Double
-    private var _testName:String
-    private var _coef:Double
+class Mark:Object {
+    dynamic private var _subject:String = ""
+    dynamic private var _val:Double = 0
+    dynamic private var _testName:String = ""
+    dynamic private var _coef:Double = 1
     //var _testDate:String
     
-    init() {
-        _subject = ""
-        _val = 0
-        _testName = ""
-        _coef = 1
-    }
-    
-    init(subject:String, val:Double, testName:String, coef:Double) {
+    convenience init(subject:String, val:Double, testName:String, coef:Double) {
+        self.init()
         _subject = subject
         _val = val
         _testName = testName
         _coef = coef
     }
-    
+        
     public var subject : String{
         get {
         return _subject

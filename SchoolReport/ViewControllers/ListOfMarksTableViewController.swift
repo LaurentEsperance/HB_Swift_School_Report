@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ListOfMarksTableViewController: UITableViewController {
-
+    var markReportInstance: MarkReport = MarkReport.singleInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,24 +31,37 @@ class ListOfMarksTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return markReportInstance.listOfMarksInDT.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Marks_list_Cell", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Marks_list_Cell", for: indexPath) as! ListOfMarksTableViewCell
+        cell.displayCell(mark: markReportInstance.listOfMarksInDT[indexPath.row])
         return cell
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
+    @IBAction func unwindAddMark(for unwindSegue: UIStoryboardSegue) {
+        if let addMarkController:AddMarkViewController = unwindSegue.source as? AddMarkViewController {
+            let newMarktoAppend:Mark = addMarkController.getMark()
+            let realm = try! Realm()
+            try! realm.write {
+                realm.add(newMarktoAppend)
+            }
+            tableView.reloadData()
+            print("Unwind Launched")
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

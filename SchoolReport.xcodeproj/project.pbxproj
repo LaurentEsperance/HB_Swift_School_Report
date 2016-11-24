@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		340AE46EC7BFECF016D20069 /* Pods_SchoolReportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569BF2B9CFB1743BF1E905C8 /* Pods_SchoolReportTests.framework */; };
+		884A2DD71DE6FC22002154C4 /* HeaderSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A2DD61DE6FC22002154C4 /* HeaderSectionTableViewCell.swift */; };
 		88696EEF1DE2EAAD001CA120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696EEE1DE2EAAD001CA120 /* AppDelegate.swift */; };
 		88696EF41DE2EAAD001CA120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88696EF21DE2EAAD001CA120 /* Main.storyboard */; };
 		88696EF61DE2EAAD001CA120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88696EF51DE2EAAD001CA120 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		88696F2F1DE30E97001CA120 /* DetailedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F2E1DE30E97001CA120 /* DetailedTableViewCell.swift */; };
 		88696F311DE30ECB001CA120 /* ListOfMarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F301DE30ECB001CA120 /* ListOfMarksTableViewController.swift */; };
 		88696F331DE30EF3001CA120 /* ListOfMarksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F321DE30EF3001CA120 /* ListOfMarksTableViewCell.swift */; };
+		88696F351DE5AD18001CA120 /* FooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88696F341DE5AD18001CA120 /* FooterTableViewCell.swift */; };
 		A26988A1E99D368040EA4032 /* Pods_SchoolReportUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4A1C99960C128A0B1C9191 /* Pods_SchoolReportUITests.framework */; };
 		BE40DC052D299E50E013E8EC /* Pods_SchoolReport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA7CDAD0A9160D5093E8DBB /* Pods_SchoolReport.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,7 @@
 		43602319328AD76C27A1B294 /* Pods-SchoolReportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolReportTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolReportTests/Pods-SchoolReportTests.debug.xcconfig"; sourceTree = "<group>"; };
 		569BF2B9CFB1743BF1E905C8 /* Pods_SchoolReportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolReportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C4A1C99960C128A0B1C9191 /* Pods_SchoolReportUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolReportUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		884A2DD61DE6FC22002154C4 /* HeaderSectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionTableViewCell.swift; sourceTree = "<group>"; };
 		8854FFE5726EDB6478812B8A /* Pods-SchoolReport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolReport.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolReport/Pods-SchoolReport.release.xcconfig"; sourceTree = "<group>"; };
 		88696EEB1DE2EAAD001CA120 /* SchoolReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88696EEE1DE2EAAD001CA120 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		88696F2E1DE30E97001CA120 /* DetailedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedTableViewCell.swift; sourceTree = "<group>"; };
 		88696F301DE30ECB001CA120 /* ListOfMarksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfMarksTableViewController.swift; sourceTree = "<group>"; };
 		88696F321DE30EF3001CA120 /* ListOfMarksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfMarksTableViewCell.swift; sourceTree = "<group>"; };
+		88696F341DE5AD18001CA120 /* FooterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterTableViewCell.swift; sourceTree = "<group>"; };
 		8CA7CDAD0A9160D5093E8DBB /* Pods_SchoolReport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolReport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9319C52DC555C2AB9A8F6A /* Pods-SchoolReportUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolReportUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolReportUITests/Pods-SchoolReportUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6BBB980244E415C61ADCA24 /* Pods-SchoolReportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolReportTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolReportTests/Pods-SchoolReportTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 			children = (
 				88696F2E1DE30E97001CA120 /* DetailedTableViewCell.swift */,
 				88696F321DE30EF3001CA120 /* ListOfMarksTableViewCell.swift */,
+				88696F341DE5AD18001CA120 /* FooterTableViewCell.swift */,
+				884A2DD61DE6FC22002154C4 /* HeaderSectionTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -515,7 +521,9 @@
 				88696F291DE2F203001CA120 /* Tools.swift in Sources */,
 				88696F311DE30ECB001CA120 /* ListOfMarksTableViewController.swift in Sources */,
 				88696F201DE2F15D001CA120 /* MainViewController.swift in Sources */,
+				88696F351DE5AD18001CA120 /* FooterTableViewCell.swift in Sources */,
 				88696F261DE2F1E0001CA120 /* Mark.swift in Sources */,
+				884A2DD71DE6FC22002154C4 /* HeaderSectionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,6 +25,6 @@ class Tools {
             addingVal += values[i] * coef[i]
             sumCoef += coef[i]
         }
-        return addingVal/sumCoef
+        return round(addingVal/sumCoef)
     }
 }

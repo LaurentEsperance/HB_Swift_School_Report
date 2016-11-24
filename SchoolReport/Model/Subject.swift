@@ -7,15 +7,12 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Subject {
-    private var _name:String
-    private var _coef:Double
+class Subject:Object {
+    dynamic private var _name:String = ""
+    dynamic private var _coef:Double = 1
     
-    init() {
-        _name = ""
-        _coef = 1
-    }
     
     public var name:String{
         get {
